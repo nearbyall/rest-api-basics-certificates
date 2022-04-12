@@ -1,0 +1,29 @@
+
+dependencies {
+
+    implementation 'org.springframework:spring-webmvc:5.3.18'
+    implementation 'org.springframework:spring-core:5.3.18'
+    implementation 'org.springframework:spring-context:5.3.18'
+    implementation 'org.springframework:spring-web:5.3.18'
+    implementation 'org.springframework:spring-jdbc:5.3.18'
+    implementation 'org.postgresql:postgresql:42.3.3'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'org.springframework:spring-aspects:5.3.18'
+    implementation 'org.hibernate.validator:hibernate-validator:6.1.0.Final'
+    implementation 'org.hibernate.validator:hibernate-validator-annotation-processor:6.1.0.Final'
+    implementation 'org.glassfish:jakarta.el:3.0.2'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+
+    testImplementation 'org.slf4j:slf4j-simple:1.7.36'
+    testImplementation 'org.springframework:spring-test:5.3.18'
+    testImplementation 'com.h2database:h2:2.1.210'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+
+}
+
+test {
+    useJUnitPlatform()
+}

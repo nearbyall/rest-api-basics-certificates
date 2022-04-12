@@ -1,0 +1,21 @@
+
+plugins {
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'war'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
+    }
+
+    group 'com.epam.esm'
+    version '0.0.1-SNAPSHOT'
+
+}

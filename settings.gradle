@@ -1,0 +1,5 @@
+
+rootProject.name = 'rest-api-basics-certificates'
+include 'api'
+include 'core'
+
