@@ -1,7 +1,7 @@
 package com.epam.esm.certificates.persistence.impl;
 
 import com.epam.esm.certificates.persistence.CertificateRepository;
-import com.epam.esm.certificates.persistence.config.TestConfig;
+import com.epam.esm.certificates.config.TestConfig;
 import com.epam.esm.certificates.persistence.entity.CertificateEntity;
 import com.epam.esm.certificates.persistence.sorting.SortColumn;
 import com.epam.esm.certificates.persistence.sorting.SortOrder;
@@ -28,7 +28,7 @@ public class CertificateRepositoryImplTest {
 
     private static final List<CertificateEntity> testCertificates = getCertificatesForTest();
 
-    @Qualifier("certificateRepositoryTest")
+    @Qualifier("certificateRepositoryPersistenceTest")
     @Autowired
     private CertificateRepository certificateRepository;
 

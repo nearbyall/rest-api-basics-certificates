@@ -181,7 +181,7 @@ public class CertificateController {
      */
     @PostMapping("/certificates")
     public ResponseEntity<CertificateDTO> addNewCertificate
-    (@RequestBody CertificateDTO certificate, BindingResult bindingResult) {
+    (@Valid @RequestBody CertificateDTO certificate, BindingResult bindingResult) {
         checkErrors(bindingResult);
 
         Optional<CertificateDTO> certificateDTO = сertificateService.create(certificate);

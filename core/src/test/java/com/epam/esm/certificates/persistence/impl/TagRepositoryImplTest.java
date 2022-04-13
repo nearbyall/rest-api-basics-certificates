@@ -1,7 +1,7 @@
 package com.epam.esm.certificates.persistence.impl;
 
 import com.epam.esm.certificates.persistence.TagRepository;
-import com.epam.esm.certificates.persistence.config.TestConfig;
+import com.epam.esm.certificates.config.TestConfig;
 import com.epam.esm.certificates.persistence.entity.TagEntity;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,7 +27,7 @@ public class TagRepositoryImplTest {
 
     private static final List<TagEntity> testTags = getTagsForTest();
 
-    @Qualifier("tagRepositoryTest")
+    @Qualifier("tagRepositoryPersistenceTest")
     @Autowired
     private TagRepository tagRepository;
 

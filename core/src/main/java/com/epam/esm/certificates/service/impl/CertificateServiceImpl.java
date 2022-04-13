@@ -40,7 +40,7 @@ public class CertificateServiceImpl implements CertificateService {
     }
 
     @Autowired
-    public void setMapper(CertificateMapper mapper) {
+    public void setMapper(@Qualifier("certificateMapper") CertificateMapper mapper) {
         this.mapper = mapper;
     }
 
